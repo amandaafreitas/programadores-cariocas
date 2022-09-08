@@ -10,6 +10,10 @@ body {
   );
 }
 
+.logo {
+  width: 148px;
+}
+
 #titulo-principal {
   color: #c1ab51;
   text-align: center;

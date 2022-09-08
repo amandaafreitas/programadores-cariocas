@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conhecendo o HTML</title>
+    <link rel="stylesheet" href="/projeto-resumo-modulo-1/css/aulas.css">
+</head>
+
+<body>
+
+    <nav class="navegacao">
+        <img src="/projeto-resumo-modulo-1/imagem/senac-logo.svg" alt="senac-logo" class="logo">
+        <a href="/projeto-resumo-modulo-1/index.html">Voltar ao menu inicial</a>
+    </nav>
+    <h1 class="titulo-principal">Conhecendo o HTML</h1>
+
+    <section class="lista-de-topicos">
+        <p>Hoje começamos a dar os primeiros passos em HTML. Alguns tópicos abordados foram:</p>
+
+        <ul style="list-style-type: square;">
+            <li>O que é HTML</li>
+            <li>Estrutura básica do HTML (meta tag,tags básicas)</li>
+            <li>Utilização de links</li>
+            <li>Criação de formulário</li>
+            <li>Colocar imagens em uma página HTML</li>
+
+        </ul>
+
+    </section>
+
+    <section class="topico">
+        <h2 class="titulo-topico">O que é HTML?</h2>
+        <p>HTML é uma linguagem de marcação utilizada na construção de páginas na Web. Ela nos permite a construção de websites e a inserção de novos conteúdos, como imagens e vídeos, por meio dos hipertextos.</p>
+    </section>
+
+    <section class="topico">
+        <h2 class="titulo-topico">Estrutura básica do HTML</h2>
+
+        <p> A Estrutura básica do HTML se resume :</p>
+
+        <ol>
+            <li> <em><strong>html</strong></em>: É a raiz do documento, engloba todos os elementos HTML </li>
+            <li> <em><strong>head</strong></em>: É onde ficam as tags de configuração e o título que aparece na aba do navegador. Configuração de caracter, linguagem.</li>
+            <li><em><strong>body</strong></em>: É o corpo do HTML, onde fica o que é visível na tela, o que aparece para o usuário</li>
+
+        </ol>
+
+        <h3>Tags principais</h3>
+        <p>Algumas das tags mais usadas são:</p>
+        <ul style="list-style-type: square;">
+            <li><em>p</em>: tag de parágrafo</li>
+            <li><em>h</em> Existe o <em>h1</em>, que é o título principal e o <em>h2, h3,h4</em> que são os subniveis do título principal</li>
+            <li><em>ul e ol</em>:São listas que podem ser não ordenadas <em>ul</em> e ordenad <em>ol</em>, os itens da lista são os <em>li</em></li>
+
+        </ul>
+    </section>
+
+    <section class="topico">
+        <h2 class="titulo-topico"> Criação de links</h2>
+
+        <p> Com a tag <em>a</em> podemos fazer links para outros sites ou outras páginas. Como esse aqui <a href="https://www.google.com.br/">Google</a></p>
+    </section>
+
+
+    <section class="topico">
+        <h2 class="titulo-topico">Criando formulários</h2>
+        <div class="elementos">
+            <ul style="list-style-type: square;">
+                <li> A tag semântica do formulário é a tag <em>form</em></li>
+                <li> As "caixinhas dos formulários são os chamados <em>inputs</em></li>
+                <li>Os <em>inputs</em> podem ser de diferentes <em>types</em> como password para senhas, text para textos,etc. </li>
+            </ul>
+            <div class="container">
+                <form action="">
+                    Login : <input type="text"> <br><br>
+                    Senha: <input type="password"> <br><br>
+                    <input type="button" value="Logar">
+                </form>
+
+                <img src="/projeto-resumo-modulo-1/imagem/formulario.png" alt="print do formulario aprendido em aula">
+
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+    <section class="topico">
+        <h2 class="titulo-topico">Inserindo imagens</h2>
+
+        <p>Para inserir imagens usamos a tag <em>img</em> com o caminho da imagem</p>
+
+        <img src="/projeto-resumo-modulo-1/imagem/codigo.png" alt="código hello world">
+    </section>
+
+
+
+
+
+
+</body>
+
+</html>

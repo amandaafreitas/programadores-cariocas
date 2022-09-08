@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <link rel="stylesheet" href="/projeto-resumo-modulo-1/css/aulas.css">
+</head>
+
+<body>
+    <nav class="navegacao">
+        <img src="/projeto-resumo-modulo-1/imagem/senac-logo.svg" alt="senac-logo" class="logo">
+        <a href="/projeto-resumo-modulo-1/index.html">Voltar ao menu inicial</a>
+    </nav>
+
+    <h1 class="titulo-principal">Display</h1>
+
+    <section class="lista-de-topicos">
+        <p>Na aula 3 demos prosseguimento as propriedades CSS e aprendemos como os elementos são posicionados na tela.</p>
+
+    </section>
+
+    <section class="topico">
+        <h2 class="titulo-topico">A propriedade display</h2>
+
+        <p> A propriedade display permite que você defina a maneira como determinado elemento HTML deve ser renderizado. Os principais tipos de display são:</p>
+
+        <ul>
+            <li><strong>Block</strong></li>
+            <li><strong>Inline</strong></li>
+            <li><strong>None</strong></li>
+            <li><strong>Inline-block</strong></li>
+            <li><strong>Flex</strong></li>
+        </ul>
+
+
+
+    </section>
+
+    <section class="topico">
+        <h2 class="titulo-topico">Display block</h2>
+
+        <p>A declaração display: block faz com que o elemento HTML seja renderizado como bloco, tal como os parágrafos e os cabeçalhos o são. Um bloco contém um espaço em branco tanto em cima como embaixo e não permite outros elementos HTML ao lado, exceto quando tiver sido declarado ao contrário (por exemplo, declarar a propriedade float para o elemento próximo ao bloco).
+
+        </p>
+
+    </section>
+
+    <section class="topico">
+        <h2 class="titulo-topico">Display inline</h2>
+        <p>A propriedade display: inline faz com que o elemento HTML seja renderizado inline, dentro do bloco na mesma linha. Quando o elemento encontra-se entre dois blocos ele forma o chamado 'bloco anônimo' e é renderizado com a menor largura possível.</p>
+    </section>
+
+
+    <section class="topico">
+        <h2 class="titulo-topico">Display none</h2>
+
+        <p>A declaração display: none faz com que o elemento HTML não seja renderizado,ou seja, ele não aparecerá na tela.</p>
+
+
+    </section>
+
+
+    <section class="topico">
+        <h2 class="titulo-topico">Display inline-block</h2>
+
+        <p>Esse display herda comportamento tanto do display block quanto do display inline. Com ele,é possível definir uma width e um heigth, assim como no block e também deixar um elemento do lado do outro.</p>
+
+
+
+    </section>
+
+    <section class="topico">
+        <h2 class="titulo-topico">Display flex</h2>
+
+        <h3>Flex Container</h3>
+        <p>O display flex é bastante utilizado pelos desenvolvedores por ser mais flexível que os demais. Com ele, podemos posicionar os elementos com maior facilidade através de suas propriedades. Quando colocamos a propriedade flex em um elemento, esse elemento se torna um <strong>flex container</strong> e seus elementos filhos, por padrão, ficam um do lado do outro como se estivessem sob o efeito do display inline.</p>
+
+        <h3>Propriedades do Flex Container</h3>
+
+        <ol>
+            <li><strong>Flex-direction:</strong> indica o eixo principal de um flex-container.É de acordo com ela que o navegador organiza os próximos elementos colocados dentro do flex-container. Por padrão, o eixo principal é o row.</li>
+            <ul class="lista-flex">
+                <li>row</li>
+                <li>row-reverse</li>
+                <li>column</li>
+                <li>column-reverse</li>
+            </ul>
+            <li><strong>Justify-content: </strong>Essa prorpiedade ajusta horizontalmente os elementos filhos do flex container</li>
+            <ul class="lista-flex">
+                <li>flex-start</li>
+                <li>flex-end</li>
+                <li>center</li>
+                <li>space-between</li>
+                <li>space-around</li>
+                <li>space-evenly</li>
+            </ul>
+
+            <li><strong>Align-items: </strong>Essa propriedade ajusta verticalmente os elementos filhos do flex container</li>
+            <ul class="lista-flex">
+                <li>stretch</li>
+                <li>flex-start</li>
+                <li>flex-end</li>
+                <li>center</li>
+                <li>baseline</li>
+            </ul>
+
+            <li><strong>Flex-wrap: </strong>Essa propriedade trabalha com a "quebra de linha" dos elementos em linha.</li>
+            <ul class="lista-flex">
+                <li>nowrap</li>
+                <li>wrap</li>
+                <li>wrap-reverse</li>
+            </ul>
+        </ol>
+
+
+    </section>
+
+
+
+
+
+</body>
+
+</html>

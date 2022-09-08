@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conhecendo o HTML</title>
+    <link rel="stylesheet" href="/projeto-resumo-modulo-1/css/aulas.css">
+</head>
+
+<body>
+
+    <nav class="navegacao">
+        <img src="/projeto-resumo-modulo-1/imagem/senac-logo.svg" alt="senac-logo" class="logo">
+        <a href="/projeto-resumo-modulo-1/index.html">Voltar ao menu inicial</a>
+    </nav>
+    <h1 class="titulo-principal">Introdução ao CSS</h1>
+
+    <section class="lista-de-topicos">
+        <p>Hoje começamos a dar os primeiros passos em CSS. Alguns tópicos abordados foram:</p>
+
+        <ul style="list-style-type: square;">
+            <li>O que é CSS?</li>
+            <li>Como aplicar o CSS</li>
+            <li>Seletores</li>
+            <li>Cores</li>
+            <li>Box Model</li>
+
+        </ul>
+
+    </section>
+
+    <section class="topico">
+        <h2 class="titulo-topico">O que é CSS?</h2>
+
+        <p> CSS é a sigla para o termo em inglês <em>Cascading Style Sheets</em> que, traduzido para o português significa Folha de Estilo em Cascatas. Ele é utilizado para <strong> documentos, adicionando cores, margem, formatações, fontes, animações</strong> e muitas outras coisas.</em>
+        <p>
+
+
+
+
+    </section>
+
+    <section class="topico">
+        <h2 class="titulo-topico">Como aplicar CSS</h2>
+
+        <p>Existem 3 tipos de folha de estilo CSS possíveis para utilização em projetos web:
+
+        <ol>
+            <li><strong>Inline:</strong> É quando os estilos CSS são aplicados diretamente dentro da tag de abertura de um elemento no HTML</li>
+            <li><strong>Interno:</strong>Nesse método, você declara a folha de estilo diretamente dentro da seção <em>head</em> do documento HTML</li>
+            <li><strong>Externo:</strong> Esse é o tipo de uso de CSS mais indicado e recomendado.Nesse tipo,os códigos CSS ficam em um documento externo ao documento HTML,separando assim as camadas de estrutura e apresentação do projeto web.</li>
+        </ol>
+
+    </section>
+
+    <section class="topico">
+        <h2 class="titulo-topico">Seletores</h2>
+        <p>No CSS precisamos saber quais elementos serão estilizados.Para isso precisamos de duas coisas:selecioná-los de alguma forma e aplicar alguma regra</p>
+
+        <p>Podemos selecionar elementos de 3 formas principais:</p>
+
+        <ul>
+            <li class="topico-seletores"><strong>Seletor de tag:</strong> O seletor de tag é o seletor mais simples do CSS.Para defini-lo basta colocar o nome da tag onde você deseja aplicar a formatação antes da definição das regras de formatação.</li>
+
+            <li class="topico-seletores"><strong>Seletor de classe:</strong> Definimos uma classe na tag de abertura de um elemento HTML.Essa classe pode representar vários elementos, e um elemento pode possuir mais de uma classe. As classes são identificadas com um . (ponto) e possuem a sintaxe <strong>.nome-da-classe.</strong></li>
+
+
+            <li class="topico-seletores"><strong>Seletor de id: </strong>Em uma tag HTML, é possível especificar um identificador, chamado de id. Uma tag pode ter apenas um id, e este id não pode se repetir no resto do documento. Os ids são identificados com um #, então um seletor de CSS de id possuiu a sintaxe <strong>#nome-do-id.</strong></li>
+        </ul>
+
+
+        <section class="topico">
+            <h2 class="titulo-topico">Cores</h2>
+
+            <p>As cores são elementos essenciais na estilização e podemos. Elas podem ser representadas de 3 formas no CSS</p>
+            <ul>
+                <li>Nome oficial da cor</li>
+                <li>Sistema rgb()</li>
+                <li>Valor hexadecimal</li>
+            </ul>
+
+
+
+        </section>
+
+
+        <section class="topico">
+            <h2 class="titulo-topico">Box model</h2>
+
+            <p>Os elementos HTML se comportam como pequenas caixas. Nós podemos alterar algumas propriedades dessas caixas utilizando o CSS. O modelo de caixa possui os seguintes dados.</p>
+            <div class="container2">
+                <ul>
+                    <li> <strong>Margem externa:</strong> margin</li>
+                    <li><strong>Borda:</strong> border</li>
+                    <li><strong>Margem interna:</strong> padding</li>
+                    <li><strong>Tamanho:</strong> width e heigth</li>
+                </ul>
+
+                <img src="/projeto-resumo-modulo-1/imagem/box-model.png" alt="box model CSS" class="img-box-model">
+
+            </div>
+
+
+        </section>
+
+
+
+
+
+
+</body>
+
+</html>
