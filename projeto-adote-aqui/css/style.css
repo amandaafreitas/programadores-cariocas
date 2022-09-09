@@ -1,0 +1,19 @@
+body {
+  background-color: #fff9b6;
+  margin: 0;
+}
+
+.logo {
+  margin-top: 0;
+}
+
+.navegacao {
+  background-color: #ff9292;
+  height: 200px;
+}
+.fotos-index {
+  width: 213px;
+  height: 212px;
+  border-radius: 50%;
+  object-fit: cover;
+}
