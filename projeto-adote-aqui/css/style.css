@@ -5,6 +5,8 @@ body {
 
 .logo {
   margin-top: 0;
+  font-size:30px ;
+  color: #fff;
 }
 
 .navegacao {
@@ -15,5 +17,15 @@ body {
   width: 213px;
   height: 212px;
   border-radius: 50%;
-  object-fit: cover;
+  object-fit:cover;
+}
+
+.nome-cachorros{
+  display: flex;
+  margin:10px ;
+
+}
+
+.titulo{
+  margin: 10px ;
 }
