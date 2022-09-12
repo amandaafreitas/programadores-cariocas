@@ -126,3 +126,46 @@ a {
 .imagem-abrigo {
   height: 400px;
 }
+
+/* responsividade */
+
+@media (max-width: 768px) {
+  body {
+    width: 100vw;
+  }
+  .navegacao {
+    width: inherit;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sobre-texto-paragrafos {
+    width: 80%;
+  }
+  .imagens-abrigo {
+    flex-direction: column;
+    width: auto;
+    align-items: center;
+  }
+
+  .imagem-abrigo {
+    width: 80%;
+    height: 80%;
+    margin: 15px;
+  }
+
+  .cachorros-adocao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .rodape {
+    height: auto;
+  }
+}
+
+@media (max-width: 425px) {
+  .cachorros-adocao {
+    display: flex;
+    flex-direction: column;
+  }
+}
