@@ -43,6 +43,7 @@ a {
   height: 212px;
   border-radius: 50%;
   object-fit: cover;
+  transition: 0.4s;
 }
 
 .cachorros-adocao {
@@ -145,7 +146,7 @@ a {
 
 /* responsividade */
 
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 577px) {
   body {
     width: 100vw;
   }
@@ -154,18 +155,31 @@ a {
     flex-direction: column;
     align-items: center;
   }
-  .sobre-texto-paragrafos {
-    width: 80%;
+
+  .sobre-abrigo-container {
+    margin-left: unset;
+    align-items: unset;
   }
-  .imagens-abrigo {
-    flex-direction: column;
-    width: auto;
-    align-items: center;
+
+  .sobre-texto-paragrafos {
+    width: 100%;
+    padding-top: 20px;
+  }
+
+  .sobre-texto-paragrafos p:first-child {
+    margin-left: 5px;
+  }
+  .sobre-texto-paragrafos p:last-child {
+    margin-left: 5px;
   }
 
   .imagem-abrigo {
-    width: 80%;
-    height: 80%;
+    margin-right: 0;
+  }
+
+  .imagem-abrigo {
+    max-width: 328px;
+    max-height: 437px;
     margin: 15px;
   }
 
@@ -179,7 +193,16 @@ a {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 576px) {
+  .sobre-abrigo-container {
+    flex-direction: column-reverse;
+    margin-left: 0;
+  }
+
+  .sobre-texto-paragrafos p:last-child {
+    margin-bottom: 20px;
+  }
+
   .cachorros-adocao {
     display: flex;
     flex-direction: column;

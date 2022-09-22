@@ -36,3 +36,60 @@
   margin: 40px 0px;
   width: 1200px;
 }
+
+@media (max-width: 768px) and (min-width: 577px) {
+  .apresentacao {
+    padding: 10px 50px;
+    margin: 0;
+  }
+  .imagens {
+    flex-direction: column;
+    width: auto;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .imagem-cachorros {
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 577px) {
+  .apresentacao {
+    margin: 0;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+  .apresentacao-conteudo {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .apresentacao-conteudo p {
+    padding: 0 45px;
+  }
+
+  .lista-cachorros {
+    align-self: flex-start;
+    padding: 0 45px;
+    flex-direction: row;
+    display: flex;
+    margin-top: 0;
+  }
+
+  .imagens {
+    flex-direction: column;
+    width: 550px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .imagem-cachorros {
+    padding: 10px 0;
+    object-fit: contain;
+    max-height: 500px;
+    height: auto;
+  }
+}
