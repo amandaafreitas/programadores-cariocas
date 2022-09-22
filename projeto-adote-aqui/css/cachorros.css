@@ -53,7 +53,7 @@
   }
 }
 
-@media (max-width: 577px) {
+@media (max-width: 576px) and (min-width: 426px) {
   .apresentacao {
     margin: 0;
     flex-direction: column;
@@ -88,6 +88,47 @@
   }
   .imagem-cachorros {
     padding: 10px 0;
+    object-fit: contain;
+    max-height: 500px;
+    height: auto;
+  }
+}
+
+@media (max-width: 425px) {
+  .apresentacao {
+    margin: 0;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+  .apresentacao-conteudo {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .apresentacao-conteudo p {
+    padding: 0 20px;
+  }
+
+  .lista-cachorros {
+    align-self: flex-start;
+    padding: 0 45px;
+    flex-direction: column;
+    display: flex;
+    margin-top: 0;
+  }
+
+  .imagens {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .imagem-cachorros {
+    padding: 10px 10px;
     object-fit: contain;
     max-height: 500px;
     height: auto;

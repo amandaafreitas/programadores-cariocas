@@ -193,7 +193,37 @@ a {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 576px) and (min-width: 426px) {
+  .sobre-abrigo-container {
+    flex-direction: column-reverse;
+    margin-left: 0;
+  }
+
+  .sobre-texto-paragrafos p:last-child {
+    margin-bottom: 20px;
+  }
+
+  .cachorros-adocao {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 425px) {
+  .logo {
+    padding-left: 0;
+  }
+
+  nav ul {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .navegacao {
+    flex-direction: column;
+    padding-top: 10px;
+  }
+
   .sobre-abrigo-container {
     flex-direction: column-reverse;
     margin-left: 0;
