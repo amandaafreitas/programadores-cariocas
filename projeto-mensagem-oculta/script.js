@@ -1,4 +1,4 @@
-// Botao de cesar ativo
+//Selecionando os elementos
 
 let btnCesar = document.querySelector("#cesar");
 let btnBase64 = document.querySelector("#base");
@@ -8,11 +8,16 @@ let radioDecodificar = document.querySelector("#radioDecodificar");
 let btnCodificar = document.querySelector("#btncodificar");
 let btnDecodificar = document.querySelector("#btndecodificar");
 
+//lista de eventos
+
 btnBase64.addEventListener("click", desativaIncremento);
 btnCesar.addEventListener("click", ativaIncremento);
 radioCodificar.addEventListener("click", ativarBtnCodificar);
 radioDecodificar.addEventListener("click", ativarBtnDecodificar);
-btnCodificar.addEventListener("click", codificarCifraDeCesar);
+btnCodificar.addEventListener("click", codificar);
+btnDecodificar.addEventListener("click", decodificar);
+
+//funções
 
 function ativaIncremento() {
   incremento.style.display = "block";
@@ -32,39 +37,56 @@ function ativarBtnDecodificar() {
   btnCodificar.style.display = "none";
 }
 
-function codificarCifraDeCesar() {
+function codificar() {
   let msgUsuario = document.querySelector("#msg-user").value;
   let inputMsgCodificada = document.querySelector("#msg-criptografada");
   let incrementoInput = Number(document.querySelector("#incremento").value);
 
-  let fraseCodificada = "";
+  if (document.getElementById("base").checked) {
+    let msgBaseCodificada = btoa(msgUsuario);
+    inputMsgCodificada.innerHTML = msgBaseCodificada;
+  } else if (document.getElementById("cesar").checked) {
+    let msgCesarCodificada = "";
 
-  for (let i = 0; i < msgUsuario.length; i++) {
-    let idLetra = msgUsuario.charCodeAt(i);
-    if ((idLetra >= 65 && idLetra <= 90) || (idLetra >= 97 && idLetra <= 122)) {
-      fraseCodificada += String.fromCharCode(idLetra + incrementoInput);
-    } else {
-      fraseCodificada += msgUsuario[i];
+    for (let i = 0; i < msgUsuario.length; i++) {
+      let idLetra = msgUsuario.charCodeAt(i);
+      if (
+        (idLetra >= 65 && idLetra <= 90) ||
+        (idLetra >= 97 && idLetra <= 122)
+      ) {
+        msgCesarCodificada += String.fromCharCode(idLetra + incrementoInput);
+      } else {
+        msgCesarCodificada += msgUsuario[i];
+      }
     }
-  }
 
-  inputMsgCodificada.innerHTML = fraseCodificada;
+    inputMsgCodificada.innerHTML = msgCesarCodificada;
+  }
 }
 
-// function cifraDeCesar(frase) {
-//   let fraseCodificada = "";
-//   let posicoes = 2;
+function decodificar() {
+  let msgUsuario = document.querySelector("#msg-user").value;
+  let inputMsgCodificada = document.querySelector("#msg-criptografada");
+  let incrementoInput = Number(document.querySelector("#incremento").value);
 
-//   for (let i = 0; i < frase.length; i++) {
-//     let idLetra = frase.charCodeAt(i);
-//     if ((idLetra >= 65 && idLetra <= 90) || (idLetra >= 97 && idLetra <= 122)) {
-//       fraseCodificada += String.fromCharCode(idLetra + posicoes);
-//     } else {
-//       fraseCodificada += frase[i];
-//     }
-//   }
+  if (document.getElementById("base").checked) {
+    let msgBaseDecodificada = window.atob(msgUsuario);
+    inputMsgCodificada.innerHTML = msgBaseDecodificada;
+  } else if (document.getElementById("cesar").checked) {
+    let msgCesarCodificada = "";
 
-//   return fraseCodificada;
-// }
+    for (let i = 0; i < msgUsuario.length; i++) {
+      let idLetra = msgUsuario.charCodeAt(i);
+      if (
+        (idLetra >= 65 && idLetra <= 90) ||
+        (idLetra >= 97 && idLetra <= 122)
+      ) {
+        msgCesarCodificada += String.fromCharCode(idLetra - incrementoInput);
+      } else {
+        msgCesarCodificada += msgUsuario[i];
+      }
+    }
 
-// console.log(cifraDeCesar("Oi, eu sou um dev!"));
+    inputMsgCodificada.innerHTML = msgCesarCodificada;
+  }
+}
