@@ -1,29 +1,52 @@
 <!DOCTYPE html>
-<html lang="pt=br">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mensagem Oculta</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Cripitografando mensagens</title>
 </head>
 
 <body>
+
     <h1>Mensagens Ocultas</h1>
     <form action="">
         <p>Digite sua mensagem:</p>
-        <textarea id="texto" cols="50" rows="6"></textarea>
-        <p>Selecione a criptografia desejada</p>
-        <label for="cesar">Cifra de César</label>
-        <input type="radio" id="cesar">
-        <label for="base">Base64</label>
-        <input type="radio" id="base">
+
+        <div class="msg">
+            <textarea id="msg-user" cols="50" rows="6"></textarea>
+            <textarea id="msg-criptografada" cols="50" rows="6"></textarea>
+        </div>
+
+        <div class="criptografias">
+            <p>Selecione a criptografia desejada</p>
+            <label for="cesar">Cifra de César</label>
+            <input type="radio" id="cesar" name="codigo">
+
+            <label for="base">Base64</label>
+            <input type="radio" id="base" name="codigo">
+        </div>
+
+
+
+        <div class="incre">
+            <label for="incremento"> Escolha um incremento:</label>
+            <input type="number" id="incremento">
+        </div>
+
+
         <label for="codificar">Codificar</label>
-        <input type="radio" value="Codificar" id="codificar">
+        <input type="radio" value="Codificar" id="radioCodificar" name="botao">
+        <input type="button" value="Codificar Mensagem" class="btn" id="btncodificar">
+
         <label for="decodificar">Decodificar</label>
-        <input type="radio" value="Decodificar" id="decodificar">
+        <input type="radio" value="Decodificar" id="radioDecodificar" name="botao">
+        <input type="button" value="Decodificar Mensagem" class="btn" id="btndecodificar">
         <script src="script.js"></script>
     </form>
+
 
 </body>
 
