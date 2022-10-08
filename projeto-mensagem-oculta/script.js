@@ -2,12 +2,12 @@
 
 let btnCesar = document.querySelector("#cesar");
 let btnBase64 = document.querySelector("#base");
-let incremento = document.querySelector(".incre");
+let incremento = document.querySelector(".input-incremento");
 let radioCodificar = document.querySelector("#radioCodificar");
 let radioDecodificar = document.querySelector("#radioDecodificar");
 let btnCodificar = document.querySelector("#btncodificar");
 let btnDecodificar = document.querySelector("#btndecodificar");
-
+let inputMsgCodificada = document.querySelector("#msg-criptografada");
 //lista de eventos
 
 btnBase64.addEventListener("click", desativaIncremento);
@@ -39,12 +39,12 @@ function ativarBtnDecodificar() {
 
 function codificar() {
   let msgUsuario = document.querySelector("#msg-user").value;
-  let inputMsgCodificada = document.querySelector("#msg-criptografada");
+
   let incrementoInput = Number(document.querySelector("#incremento").value);
 
   if (document.getElementById("base").checked) {
     let msgBaseCodificada = btoa(msgUsuario);
-    inputMsgCodificada.innerHTML = msgBaseCodificada;
+    inputMsgCodificada.value = msgBaseCodificada;
   } else if (document.getElementById("cesar").checked) {
     let msgCesarCodificada = "";
 
@@ -60,18 +60,17 @@ function codificar() {
       }
     }
 
-    inputMsgCodificada.innerHTML = msgCesarCodificada;
+    inputMsgCodificada.value = msgCesarCodificada;
   }
 }
 
 function decodificar() {
   let msgUsuario = document.querySelector("#msg-user").value;
-  let inputMsgCodificada = document.querySelector("#msg-criptografada");
   let incrementoInput = Number(document.querySelector("#incremento").value);
 
   if (document.getElementById("base").checked) {
     let msgBaseDecodificada = window.atob(msgUsuario);
-    inputMsgCodificada.innerHTML = msgBaseDecodificada;
+    inputMsgCodificada.value = msgBaseDecodificada;
   } else if (document.getElementById("cesar").checked) {
     let msgCesarCodificada = "";
 
@@ -87,6 +86,6 @@ function decodificar() {
       }
     }
 
-    inputMsgCodificada.innerHTML = msgCesarCodificada;
+    inputMsgCodificada.value = msgCesarCodificada;
   }
 }

@@ -1,18 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;300&display=swap");
+
 body {
   background-color: rgba(16, 23, 21, 255);
+  /* background:url("img/imagem-fundo.jpg") no-repeat  ; */
+  font-family: "Gemunu Libre", sans-serif;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+fieldset {
+  width: 45%;
+  border-radius: 13px;
+  box-shadow: 5px 10px 10px #000;
 }
 
 .texto-principal {
   color: #fff;
   font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 .subtitulo {
   color: #59d794;
   font-size: 0.875em;
+  text-align: center;
+  margin: 0 0 10px 0;
 }
-.incre {
+
+.criptografias label:last-of-type {
+  margin-left: 15px;
+}
+
+.radiosbtn label:last-of-type {
+  margin-left: 15px;
+}
+.input-incremento {
   display: none;
+  margin-top: 15px;
 }
 
 #btncodificar {
@@ -41,4 +69,53 @@ label {
 
 p {
   color: #fff;
+}
+
+/* .criptografias {
+  padding: 20px;
+} */
+
+.radiosbtn {
+  padding: 15px 0 20px 0;
+}
+
+.msg {
+  display: grid;
+  gap: 20px;
+  width: 90;
+}
+
+.container-conteudo {
+  display: grid;
+  justify-content: center;
+}
+
+textarea {
+  color: #fff;
+}
+/* .container-btn {
+  display: grid;
+  justify-content: center;
+} */
+
+.btn {
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+  background-color: #292d2e;
+  color: #19c9a3;
+  transition: 0.4s;
+  box-shadow: 5px 10px 10px #000;
+}
+
+.btn:hover {
+  background-color: #616b6c;
+  transition: 0.4s;
+}
+
+@media (max-width: 576px) {
+  fieldset {
+    width: 65%;
+  }
 }

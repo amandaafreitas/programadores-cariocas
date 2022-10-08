@@ -12,43 +12,60 @@
 <body>
 
     <h1 class="texto-principal">Decodificador</h1>
-    <h3 class="subtitulo">base 64 e cifra de César</h3>
+    <h3 class="subtitulo">Base 64</h3>
+    <h3 class="subtitulo">Cifra de César</h3>
     <form action="">
-        <p>Digite sua mensagem:</p>
 
-        <div class="msg">
-            <textarea id="msg-user" cols="50" rows="6" placeholder="Digite sua mensagem..."></textarea>
-            <textarea id="msg-criptografada" cols="50" rows="6" placeholder="Mensagem Codificada"></textarea>
-        </div>
+        <fieldset>
+            <div class="container-conteudo">
+                <p>Digite sua mensagem:</p>
 
-        <div class="criptografias">
-            <p>Selecione a criptografia desejada</p>
-            <label for="cesar">Cifra de César</label>
-            <input type="radio" id="cesar" name="codigo">
+                <div class="msg">
+                    <textarea id="msg-user" cols="50" rows="6" placeholder="Digite sua mensagem..."></textarea>
+                    <textarea id="msg-criptografada" cols="50" rows="6" placeholder="Mensagem Codificada"></textarea>
+                </div>
 
-            <label for="base">Base64</label>
-            <input type="radio" id="base" name="codigo" class="teste">
-        </div>
+                <div class="criptografias">
+                    <p>Selecione a criptografia desejada</p>
+                    <label for="cesar">Cifra de César</label>
+                    <input type="radio" id="cesar" name="codigo">
 
-
-
-        <div class="incre">
-            <label for="incremento"> Escolha um incremento:</label>
-            <input type="number" id="incremento">
-        </div>
+                    <label for="base">Base64</label>
+                    <input type="radio" id="base" name="codigo" class="teste">
+                </div>
 
 
-        <label for="codificar">Codificar</label>
-        <input type="radio" value="Codificar" id="radioCodificar" name="botao">
-        <input type="button" value="Codificar Mensagem" class="btn" id="btncodificar">
 
-        <label for="decodificar">Decodificar</label>
-        <input type="radio" value="Decodificar" id="radioDecodificar" name="botao">
-        <input type="button" value="Decodificar Mensagem" class="btn" id="btndecodificar">
-        <script src="script.js"></script>
+                <div class="input-incremento">
+                    <label for="incremento"> Escolha um incremento:</label>
+                    <input type="number" id="incremento">
+                </div>
+
+                <div class="radiosbtn">
+                    <label for="codificar">Codificar</label>
+                    <input type="radio" value="Codificar" id="radioCodificar" name="botao">
+
+
+                    <label for="decodificar">Decodificar</label>
+                    <input type="radio" value="Decodificar" id="radioDecodificar" name="botao">
+
+                </div>
+
+                <div class="container-btn">
+                    <input type="button" value="Codificar Mensagem" class="btn" id="btncodificar">
+                    <input type="button" value="Decodificar Mensagem" class="btn" id="btndecodificar">
+                </div>
+
+            </div>
+
+
+
+
+
+        </fieldset>
     </form>
 
-
+    <script src="script.js"></script>
 </body>
 
 </html>
