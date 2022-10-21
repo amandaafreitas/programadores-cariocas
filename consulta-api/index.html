@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Conselho</title>
+</head>
+
+<body>
+    <h1 class="text-center text-info">Clique no botão abaixo para um conselho</h1>
+    <div class="col-md-12 text-center
+    align-items-center">
+        <button class="btn btn-primary" type="button" onclick="aconselhar()">Aconselhar</button>
+    </div>
+
+    <div class="conselho">
+
+    </div>
+    <script>
+
+
+        function aconselhar() {
+            const conselho = document.querySelector('.conselho')
+            console.log(conselho)
+            fetch("https://api.adviceslip.com/advice", { cache: "no-store" }).then(resposta => resposta.json()).then(respostaConselho => {
+                console.log(respostaConselho)
+                conselho.innerHTML = `<p>${respostaConselho.slip.advice}</p>`
+            })
+
+
+        }
+    </script>
+</body>
+
+</html>
