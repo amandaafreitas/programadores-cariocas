@@ -1,0 +1,64 @@
+{
+  "filmes": [
+    {
+      "id": 1,
+      "titulo": "Adão Negro",
+      "ano": 2022,
+      "direcao": "Jaume Collet-Serra"
+    },
+    {
+      "titulo": "Halloween Ens - O Acerto de Contas Final",
+      "ano": 2022,
+      "direcao": "David Gordon Green",
+      "id": 2
+    },
+    {
+      "titulo": "Lilo,Lilo,Crocodilo",
+      "ano": 2021,
+      "direcao": "Josh Gordon, Will Speck",
+      "id": 3
+    },
+    {
+      "titulo": "Lilo,Lilo,Crocodilo",
+      "ano": 2022,
+      "direcao": "Josh Gordon, Will Speck",
+      "id": 4
+    }
+  ],
+  "generos": [
+    {
+      "id": 1,
+      "genero": "Aventura"
+    },
+    {
+      "genero": "Terror",
+      "id": 2
+    },
+    {
+      "genero": "Romance",
+      "id": 3
+    },
+    {
+      "genero": "Comédia",
+      "id": 4
+    }
+  ],
+  "produtoras": [
+    {
+      "id": 1,
+      "nome": "Warner Bros.Pictures"
+    },
+    {
+      "nome": "Sony Pictures",
+      "id": 2
+    },
+    {
+      "nome": "Universal Studios",
+      "id": 3
+    },
+    {
+      "nome": "Paramount Pictures",
+      "id": 4
+    }
+  ]
+}
