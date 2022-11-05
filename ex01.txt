@@ -1,1 +1,0 @@
- // Escreva uma função que aceite um inteiro n e uma string s como parâmetros e retorne uma string de s vezes repetidas exatamente n. Exemplo: n = 6 s = "I" retorna "IIIIII"
